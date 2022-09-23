@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    //Pegunte ao usuário quantos nomes ele deseja inserir
+    //Depois apresente a quantidade de nomes que ele apresentou
+
+    let quantidadeNomes = Number(prompt("digite quantos nomes você deseja inserir"));
+    let nomes = [];
+
+    for (let contador = 1; contador <= quantidadeNomes; contador++) {
+        nomes.push(prompt(`Nome ${contador} de ${quantidadeNomes}:`));
+    }
+
+    document.write(`os nomes são: ${nomes.join(", ")}`);
+
+</script>

@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    
+    let quantidade = Number(prompt("digite quantos números você quer na sequência de Fibonacci"));
+    let fibonacci = [];
+    fibonacci.push(0, 1);
+
+    for (let contador = 2; contador < quantidade; contador++ ) {
+        fibonacci.push(fibonacci[contador - 2] + fibonacci[contador - 1]);
+    }
+    
+    document.write(fibonacci);
+
+</script>
