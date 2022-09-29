@@ -1,0 +1,21 @@
+<meta charset="UTP-8">
+<script>
+
+//Peça para o usuario informar um número e diga se é um número primo ou não
+
+const numeroPrimo = Number(prompt("informe um número"));
+let divisivel = 0;
+
+    for(let contador = 1; contador <= numeroPrimo; contador++) {
+        if(numeroPrimo % contador === 0) {
+            divisivel = divisivel + 1;
+        }
+}
+
+    if (divisivel === 2) {
+        document.write(`o número ${numeroPrimo} é um número primo`);
+    } else {
+        document.write(`o número ${numeroPrimo} não é um número primo`);
+    }
+
+</script>
